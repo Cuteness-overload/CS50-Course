@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+ul {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+
+}
+#welcomebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.text{
+    border: thick solid #0033cc;
+    border-radius: 10%;
+    color: grey;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    /*min-height: 30vh;*/
+}
+header{
+    color: lightgrey;
+    font-size: 60px;
+}
+.low{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    font-size: clamp(10px, 1vw, 22px);
+}
+#imagerow {
+    display: flex;
+    justify-content: space-evenly;
+    color: #0044cc;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+.pic {
+    border-radius: 50%;
+    max-width: 300px;
+    transition: .2s;
+}
+.pic:hover {
+    transform: scale(1.25);
+}
+.contact {
+    text-align: center;
+    font-size: clamp(20px, 1vw, 30px);
+    position: relative;
+}
+
+label{
+    color: #0033cc;
+}
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    color: #0033cc;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #0033cc;
+    color: white;
+  }
+
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.filler {
+    columns: 100px 5;
+    font-size: clamp(20px, 1vw, 30px);
+}
